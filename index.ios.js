@@ -91,7 +91,7 @@ class ImagesView extends Component {
         removeClippedSubviews={true}
         contentContainerStyle={styles.contentContainer}
         style={styles.scrollView}>
-        {this._reloadView()}   
+        {this._reloadView()}
         {this._chaildView()}
       </ScrollView>
     )
