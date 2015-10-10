@@ -50,7 +50,7 @@ class ImagesView extends Component {
   }
 
   execQueryApi() {
-    fetch("http://119.29.45.113:1024/api/v1/channels/images")
+    fetch("http://119.29.45.113:1024/api/v1/channels/images?tags=scenery,animal")
       .then(response => response.json())
       .then(json => {
         this.setState({images: json, reload: false});
